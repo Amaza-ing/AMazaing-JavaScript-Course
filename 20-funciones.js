@@ -1,13 +1,13 @@
-// Funciones declaradas (Function expressions)
+// Funciones declaradas (Function declarations)
 
 function sayHello() {
-  console.log("Hello");  
+  console.log("Hello");
 }
 
 sayHello();
 
 
-// Funciones expresadas (Function declarations)
+// Funciones expresadas (Function expressions)
 
 const sayGoodbye = function() {
   console.log("Goodbye");  
@@ -23,6 +23,7 @@ function saySomething(msg) {
 }
 
 saySomething("Esto es un mensaje por parámetro");
+saySomething("Esto es otro mensaje");
 
 
 function sum(num1, num2) {
@@ -35,7 +36,7 @@ sum(10, 5);
 // Valores por defecto
 
 function greet(name = "Invitado") {
-  console.log(`¡Hola, ${name}!`);
+  console.log(`Hola, ${name}`);  
 }
 
 greet("Adrián");
