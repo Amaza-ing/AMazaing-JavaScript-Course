@@ -1,32 +1,34 @@
 const fruits = ["manzana", "plátano"];
 
 fruits.push("naranja");
-console.log(fruits); // ["manzana", "plátano", "naranja"]
+console.log(fruits);
 
 fruits.pop();
-console.log(fruits); // ["manzana", "plátano"]
+console.log(fruits);
 
 fruits.unshift("fresa");
-console.log(fruits); // ["fresa", "manzana", "plátano"]
+console.log(fruits);
 
 fruits.shift();
-console.log(fruits); // ["manzana", "plátano"]
+console.log(fruits);
 
-console.log(fruits.indexOf("plátano")); // Salida: 1
-console.log(fruits.includes("manzana")); // Salida: true
+console.log(fruits.indexOf("plátano"));
+console.log(fruits.includes("kiwi"));
 
-console.log(fruits.join(" ")); // Salida: manzana plátano
-console.log(fruits.toString()); // Salida: manzana,plátano
-
+console.log(fruits.join(" "));
+console.log(fruits.toString());
 
 const numbers = [10, 20, 30, 40, 50];
 
 const sliced = numbers.slice(1, 4);
-console.log(sliced); // [20, 30, 40]
+console.log(sliced);
 
 numbers.splice(2, 1, 99);
-console.log(numbers); // [10, 20, 99, 40, 50]
+console.log(numbers);
 
+const spliced = numbers.toSpliced(2, 1, 88);
+console.log(spliced);
+console.log(numbers);
 
 const products = [
   {
@@ -49,8 +51,8 @@ const products = [
 const monitor = {
   name: "Monitor",
   price: 200,
-  isForSale: true
-}
+  isForSale: true,
+};
 
 products.push(monitor);
 console.log(products);
