@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header {
+  background-color: blue;
+  color: white;
+  padding: 20px;
+
+  .title {
+    margin-top: 0;
+    text-align: center;
+  }
+  .title.big {
+    font-size: 3rem;
+  }
+
+  .nav-list {
+    display: flex;
+    justify-content: space-around;
+
+    .nav-link {
+      color: white;
+    }
+  }
+}
+
+.gallery {
+  margin: 50px;
+
+  .cards-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    .photo-card {
+      border: 3px solid black;
+      text-align: center;
+      background-color: coral;
+      display: flex;
+      flex-direction: column;
+      transition: all 0.5s;
+
+      .img {
+        width: 300px;
+        height: 200px;
+      }
+    }
+    .photo-card.purple {
+      background-color: purple;
+      color: white;
+    }
+    .photo-card.big {
+      transform: scale(1.5);
+    }
+  }
+}
